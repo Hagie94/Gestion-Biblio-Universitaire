@@ -1,4 +1,4 @@
-# React + Vite
+# React + Vite + tailwindcss
 
 # Gestion-Biblio-Universitaire
 
