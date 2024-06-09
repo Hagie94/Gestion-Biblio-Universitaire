@@ -2,7 +2,7 @@
 
 # Gestion-Biblio-Universitaire
 
-git clone https://github.com/Hagie94/Gestion-Biblio-Universitaire.git
+git clone https://github.com/Hagie94/Gestion-Biblio-Universitaire
 
 cd Gestion-Biblio-Universitaire
 
