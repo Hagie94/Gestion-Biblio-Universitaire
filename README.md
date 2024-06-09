@@ -2,9 +2,9 @@
 
 # Gestion-Biblio-Universitaire
 
-git clone
+git clone https://github.com/Hagie94/Gestion-Biblio-Universitaire.git
 
-cd 
+cd Gestion-Biblio-Universitaire
 
 npm install
 
