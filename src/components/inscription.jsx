@@ -54,44 +54,43 @@ export default function Inscription(){
       };
     
     return (
-        <section class="vh-100 gradient-custom">
-            <div class="container py-5 h-100">
-                <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                    <div class="card bg-dark text-white">
+        <section className="vh-100 gradient-custom">
+            <div className="container py-5 h-100">
+                <div className="row d-flex justify-content-center align-items-center h-100">
+                <div className="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div className="card bg-dark text-white">
                         <form onSubmit={handleSubmit}>
-                            <div class="card-body p-5 text-center">
+                            <div className="card-body p-5 text-center">
+                                <div className="mb-md-5 mt-md-4 pb-5">
+                                <h2 className="fw-bold mb-2 text-uppercase">S'inscrire</h2>
+                                <p className="text-white-50 mb-5">Veuillez completer les informations suivantes pour s'inscrire</p>
 
-                                <div class="mb-md-5 mt-md-4 pb-5">
-                                <h2 class="fw-bold mb-2 text-uppercase">S'inscrire</h2>
-                                <p class="text-white-50 mb-5">Veuillez completer les informations suivantes pour s'inscrire</p>
-
-                                <div data-mdb-input-init class="form-outline form-white mb-4"> 
-                                    <label class="form-label" >Nom</label>
-                                    <input type="email" placeholder='Entrer votre nom' name='name' value={formData.name} onChange={handleChange}  class="form-control form-control-lg" required />
+                                <div data-mdb-input-init className="form-outline form-white mb-4"> 
+                                    <label className="form-label" >Nom</label>
+                                    <input type="email" placeholder='Entrer votre nom' name='name' value={formData.name} onChange={handleChange}  className="form-control form-control-lg" required />
                                 </div>
-                                <div data-mdb-input-init class="form-outline form-white mb-4">
-                                    <label class="form-label" for="typeEmailX">Prénom</label>
-                                    <input type="email" placeholder='Entrer votre prenom' name='last_name' value={formData.last_name} onChange={handleChange} class="form-control form-control-lg" required />
+                                <div data-mdb-input-init className="form-outline form-white mb-4">
+                                    <label className="form-label">Prénom</label>
+                                    <input type="email" placeholder='Entrer votre prenom' name='last_name' value={formData.last_name} onChange={handleChange} className="form-control form-control-lg" required />
                                 </div>
-                                <div data-mdb-input-init class="form-outline form-white mb-4">
-                                    <label class="form-label" for="typeEmailX">Date de naissance</label>
-                                    <input type="date" name='birthday' value={formData.birthday} onChange={handleChange} class="form-control form-control-lg" required />
+                                <div data-mdb-input-init className="form-outline form-white mb-4">
+                                    <label className="form-label">Date de naissance</label>
+                                    <input type="date" name='birthday' value={formData.birthday} onChange={handleChange} className="form-control form-control-lg" required />
                                 </div>
-                                <div data-mdb-input-init class="form-outline form-white mb-4">
-                                    <label class="form-label" for="typeEmailX">Adresse mail</label>
-                                    <input type="email" placeholder='Entrer votre email' name='email' value={formData.email} onChange={handleChange} class="form-control form-control-lg" required />
+                                <div data-mdb-input-init className="form-outline form-white mb-4">
+                                    <label className="form-label">Adresse mail</label>
+                                    <input type="email" placeholder='Entrer votre email' name='email' value={formData.email} onChange={handleChange} className="form-control form-control-lg" required />
                                 </div>
-                                <div data-mdb-input-init class="form-outline form-white mb-4">
-                                    <label class="form-label" for="typeEmailX">votre Adresse</label>
-                                    <input type="email"  placeholder='Entrer votre adresse exacte' name='address' value={formData.address} onChange={handleChange} class="form-control form-control-lg" required />
+                                <div data-mdb-input-init className="form-outline form-white mb-4">
+                                    <label className="form-label">votre Adresse</label>
+                                    <input type="email"  placeholder='Entrer votre adresse exacte' name='address' value={formData.address} onChange={handleChange} className="form-control form-control-lg" required />
                                 </div>
-                                <div data-mdb-input-init class="form-outline form-white mb-4">
-                                    <label class="form-label" for="typeEmailX">Numéro de téléphone</label>
-                                    <input type="email" placeholder='Entrer votre numero' name='phone' value={formData.phone} onChange={handleChange} class="form-control form-control-lg" required />
+                                <div data-mdb-input-init className="form-outline form-white mb-4">
+                                    <label className="form-label">Numéro de téléphone</label>
+                                    <input type="email" placeholder='Entrer votre numero' name='phone' value={formData.phone} onChange={handleChange} className="form-control form-control-lg" required />
                                 </div>
-                                <div data-mdb-input-init class="form-outline form-white mb-4">
-                                    <label class="form-label" for="typeEmailX">Vous êtes un(e):</label>
+                                <div data-mdb-input-init className="form-outline form-white mb-4">
+                                    <label className="form-label">Vous êtes un(e):</label>
                                     <select className='form-control form-control-lg' name='category' onChange={handleChange}>
                                         <option value="Etudiant">Etudiant</option>
                                         <option value="Professeur">Professeur</option>
@@ -100,20 +99,20 @@ export default function Inscription(){
                                     </select>
                                 </div>
 
-                                <div data-mdb-input-init class="form-outline form-white mb-4">
-                                    <label class="form-label" for="typePasswordX">Mot de passe</label>
-                                    <input type="password" placeholder='Votre mot de passe' name='password' value={formData.password} onChange={handleChange} class="form-control form-control-lg" required />
+                                <div data-mdb-input-init className="form-outline form-white mb-4">
+                                    <label className="form-label">Mot de passe</label>
+                                    <input type="password" placeholder='Votre mot de passe' name='password' value={formData.password} onChange={handleChange} className="form-control form-control-lg" required />
                                 </div>
-                                <div data-mdb-input-init class="form-outline form-white mb-4">
-                                    <label class="form-label" for="typePasswordX">Confirmer votre Mot de passe</label>
-                                    <input type="password" placeholder='Confirmer votre mot de passe' name='confirmPassword' value={formData.confirmPassword} onChange={handleChange} class="form-control form-control-lg" required />
+                                <div data-mdb-input-init className="form-outline form-white mb-4">
+                                    <label className="form-label">Confirmer votre Mot de passe</label>
+                                    <input type="password" placeholder='Confirmer votre mot de passe' name='confirmPassword' value={formData.confirmPassword} onChange={handleChange} className="form-control form-control-lg" required />
                                 </div>
                                 {error && <p className='text-red-500 mt-4'>{error}</p>}
-                                <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-light btn-lg px-5" type="submit">S'inscrire</button>
+                                <button data-mdb-button-init data-mdb-ripple-init className="btn btn-outline-light btn-lg px-5" type="submit">S'inscrire</button>
                                 </div>
 
                                 <div>
-                                <p class="mb-0">Vous avez déja un compte? <Link to="/connexion" class="text-white-50 fw-bold">Se connecter</Link>
+                                <p className="mb-0">Vous avez déja un compte? <Link to="/connexion" className="text-white-50 fw-bold">Se connecter</Link>
                                 </p>
                                 </div>
 

@@ -39,13 +39,13 @@ export default function Formulaire(){
                             <p className="text-white-50 mb-5">Entrer votre nom et mot de passe pour se connecter</p>
 
                             <div data-mdb-input-init className="form-outline form-white mb-4">    
-                                <label className="form-label" for="typeEmailX">E-mail</label>
+                                <label className="form-label">E-mail</label>
                                 <input type="email" id="typeEmailX" name='email' placeholder='Entrer votre adresse mail' value={auth.email} onChange={handleChange} className="form-control form-control-lg" required/>
 
                             </div>
 
                             <div data-mdb-input-init className="form-outline form-white mb-4">
-                                <label className="form-label" for="typePasswordX">Mot de passe</label>
+                                <label className="form-label" >Mot de passe</label>
                                 <input type="password" placeholder='Entrer votre mot de passe' name='password' value={auth.password} onChange={handleChange} id="typePasswordX" className="form-control form-control-lg" required />
 
                             </div>
