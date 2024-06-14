@@ -1,18 +1,68 @@
 import * as React from 'react';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import {Link} from 'react-router-dom'
 
 const AllBooks = () => {
     return(
-        
-        <div className="d-flex align-items-center bg-light justify-content-center" style={{height: "250px"}}>
-            <h3>TOUS LES LIVRES <hr /></h3>
-            <div>
-                <div className="p-2 m-2 bg-info text-white shadow rounded-2">Flex item</div>
-                <div className="p-2 m-2 bg-info text-white shadow rounded-2">Flex item</div>
-                <div className="p-2 m-2 bg-info text-white shadow rounded-2">Flex item</div>
+        <div>
+            <div className='d-flex column justify-content-around align-items-center'>
+                <h1>Tous les livres</h1>
             </div>
-            <h3>DISPONIBLES <hr /></h3>
-
-            <h3>NON DISPONIBLE <hr /></h3>
+            <h3>Romance:</h3> <hr />
+            <div className='d-flex flex-wrap row justify-content-around align-items-center'>
+            {[...Array(7)].map((i) => (
+                <Card key={i} style={{ width: '10rem', height: "auto" }}>
+                    <Card.Img variant="top" src="holder.js/100px180" alt='No Cover'/>
+                    <Card.Body>
+                        <Card.Title>Another Motherfucking day</Card.Title>
+                        <Card.Text>
+                            Autor: Who cares
+                            Date: 1995
+                            Edition: Life Sucks
+                        </Card.Text>
+                        <Button variant="danger">statut: Non Dispo</Button>
+                    </Card.Body>
+                </Card> 
+            ))}
+            </div>
+            <hr />
+            <h3>Erotique</h3> <hr />
+            <div className='d-flex flex-wrap row justify-content-around align-items-center'>
+            {[...Array(7)].map((i) => (
+                <Card key={i} style={{ width: '10rem', height: "auto" }}>
+                    <Card.Img variant="top" src="holder.js/100px180" alt='No Cover'/>
+                    <Card.Body>
+                        <Card.Title>50 Shades of Blue</Card.Title>
+                        <Card.Text>
+                            Autor: JeuxSui Kon
+                            Date: 1980
+                            Edition: Hot
+                        </Card.Text>
+                        <Button variant="success">statut: Dispo</Button>
+                    </Card.Body>
+                </Card> 
+            ))}
+            </div>
+            <hr />
+            <h3>Sci-Fi: </h3>
+            <hr />
+            <div className='d-flex flex-wrap row justify-content-around align-items-center'>
+            {[...Array(7)].map((i) => (
+                <Card key={i} style={{ width: '10rem', height: "auto" }}>
+                    <Card.Img variant="top" src="holder.js/100px180" alt='No Cover'/>
+                    <Card.Body>
+                        <Card.Title>AFTER MY MARIAGE</Card.Title>
+                        <Card.Text>
+                            Autor: Tahina
+                            Date: 1995
+                            Edition: fantastic
+                        </Card.Text>
+                        <Button variant="success">statut: Dispo</Button>
+                    </Card.Body>
+                </Card> 
+            ))}
+            </div>
 
         </div>
     )
