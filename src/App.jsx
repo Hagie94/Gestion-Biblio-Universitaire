@@ -8,6 +8,7 @@ import Alluser from './components/etudiants/alluser.jsx';
 import Header from './components/view/header.jsx';
 import Disponible from './components/livre/disponible.jsx';
 import Nondisponible from './components/livre/nonDisponibles.jsx';
+import AddBook from './components/livre/ajoutlivre.jsx';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
             <Route path='/alluser' Component={Alluser} />
             <Route path='/livre-disponible' Component={Disponible} />
             <Route path='/livre-nondisponible' Component={Nondisponible} />
-
+            <Route path='/ajoutlivre' Component={AddBook} />
           </Routes>
         </BrowserRouter>
     </div>

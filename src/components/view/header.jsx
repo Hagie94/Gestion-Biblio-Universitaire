@@ -9,7 +9,7 @@ export default function Header() {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav ml-auto">
+        <ul className="navbar-nav " style={{alignItems: "right"}}>
             <li className="nav-item">
               <NavLink to='/livre' className="nav-link">Livres</NavLink>
             </li>
@@ -17,7 +17,12 @@ export default function Header() {
               <Link to='/alluser' className="nav-link">Utilisateur</Link>
             </li>
             <li className="nav-item">
-              <Link to='/connexion' className="nav-link">Se connecter</Link>
+              <Link to='/ajoutlivre' className="nav-link">Ajout d'un nouveau livre</Link>
+            </li>
+        </ul>
+        <ul className='navbar-nav' style={{float: "right", marginLeft: "auto"}}>
+        <li className="nav-item">
+              <Link to='/connexion' className="nav-link"> <i class="bi bi-box-arrow-right"></i>Se connecter</Link>
             </li>
             <li className="nav-item">
               <Link to='/inscription' className="nav-link">S'inscrire</Link>

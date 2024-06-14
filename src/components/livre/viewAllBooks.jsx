@@ -11,6 +11,7 @@ const AllBooks = () => {
                 <h3><Link to='/livre-disponible' style={{textDecoration: "none"}}>Disponibles</Link></h3>
                 <h3><Link to="/livre-nondisponible" style={{textDecoration: "none"}}>Non Disponibles</Link></h3>
             </div>
+            <hr />
             <h3>Romance:</h3> <hr />
             <div className='d-flex flex-wrap row justify-content-around align-items-center'>
             {[...Array(5)].map((i) => (
