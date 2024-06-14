@@ -6,6 +6,8 @@ import Inscription from './components/inscription.jsx';
 import AllBooks from './components/livre/viewAllBooks.jsx';
 import Alluser from './components/etudiants/alluser.jsx';
 import Header from './components/view/header.jsx';
+import Disponible from './components/livre/disponible.jsx';
+import Nondisponible from './components/livre/nonDisponibles.jsx';
 
 
 function App() {
@@ -19,6 +21,9 @@ function App() {
             <Route path="/inscription" Component={Inscription} />
             <Route path='/livre' Component={AllBooks} />
             <Route path='/alluser' Component={Alluser} />
+            <Route path='/livre-disponible' Component={Disponible} />
+            <Route path='/livre-nondisponible' Component={Nondisponible} />
+
           </Routes>
         </BrowserRouter>
     </div>

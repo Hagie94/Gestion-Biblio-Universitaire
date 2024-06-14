@@ -8,10 +8,12 @@ const AllBooks = () => {
         <div>
             <div className='d-flex column justify-content-around align-items-center'>
                 <h1>Tous les livres</h1>
+                <h3><Link to='/livre-disponible' style={{textDecoration: "none"}}>Disponibles</Link></h3>
+                <h3><Link to="/livre-nondisponible" style={{textDecoration: "none"}}>Non Disponibles</Link></h3>
             </div>
             <h3>Romance:</h3> <hr />
             <div className='d-flex flex-wrap row justify-content-around align-items-center'>
-            {[...Array(7)].map((i) => (
+            {[...Array(5)].map((i) => (
                 <Card key={i} style={{ width: '10rem', height: "auto" }}>
                     <Card.Img variant="top" src="holder.js/100px180" alt='No Cover'/>
                     <Card.Body>
@@ -29,7 +31,7 @@ const AllBooks = () => {
             <hr />
             <h3>Erotique</h3> <hr />
             <div className='d-flex flex-wrap row justify-content-around align-items-center'>
-            {[...Array(7)].map((i) => (
+            {[...Array(4)].map((i) => (
                 <Card key={i} style={{ width: '10rem', height: "auto" }}>
                     <Card.Img variant="top" src="holder.js/100px180" alt='No Cover'/>
                     <Card.Body>
@@ -48,7 +50,7 @@ const AllBooks = () => {
             <h3>Sci-Fi: </h3>
             <hr />
             <div className='d-flex flex-wrap row justify-content-around align-items-center'>
-            {[...Array(7)].map((i) => (
+            {[...Array(3)].map((i) => (
                 <Card key={i} style={{ width: '10rem', height: "auto" }}>
                     <Card.Img variant="top" src="holder.js/100px180" alt='No Cover'/>
                     <Card.Body>

@@ -8,7 +8,7 @@ const Alluser = () => {
 
             <hr /><h3>Les étudiants:</h3> <hr />
             <div className='d-flex flex-wrap row justify-content-around align-items-center'>
-            {[...Array(7)].map((i) => (
+            {[...Array(6)].map((i) => (
                 <Card key={i} style={{ width: '10rem', height: "auto" }}>
                     <Card.Img variant="top" src="holder.js/100px180" alt='Tsisy Sary p*** eh'/>
                     <Card.Body>
@@ -25,7 +25,7 @@ const Alluser = () => {
             </div>
             <hr /><h3>Personnelles:</h3> <hr />
             <div className='d-flex flex-wrap row justify-content-around align-items-center'>
-            {[...Array(7)].map((i) => (
+            {[...Array(5)].map((i) => (
                 <Card key={i} style={{ width: '10rem', height: "auto" }}>
                     <Card.Img variant="top" src="holder.js/100px180" alt='Tsisy Sary p*** eh'/>
                     <Card.Body>
@@ -42,7 +42,7 @@ const Alluser = () => {
             </div>
             <hr /><h3>Autres:</h3> <hr />
             <div className='d-flex flex-wrap row justify-content-around align-items-center'>
-            {[...Array(7)].map((i) => (
+            {[...Array(4)].map((i) => (
                 <Card key={i} style={{ width: '10rem', height: "auto" }}>
                     <Card.Img variant="top" src="holder.js/100px180" alt='Tsisy Sary p*** eh'/>
                     <Card.Body>
