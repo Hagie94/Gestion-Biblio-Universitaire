@@ -5,12 +5,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Inscription from './components/inscription.jsx';
 import AllBooks from './components/livre/viewAllBooks.jsx';
 import Alluser from './components/etudiants/alluser.jsx';
-import Footer from './components/view/footer.jsx';
 import Header from './components/view/header.jsx';
 
 function App() {
   return (
-    <div className='bg-light'>
+    <div className='bg-light h-full w-full'>
         <BrowserRouter>
           <Header />
           <Routes>
@@ -20,7 +19,6 @@ function App() {
             <Route path='/livre' Component={AllBooks} />
             <Route path='/alluser' Component={Alluser} />
           </Routes>
-          <Footer />
         </BrowserRouter>
     </div>
   );
