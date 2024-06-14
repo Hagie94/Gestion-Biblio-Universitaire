@@ -3,7 +3,9 @@ import * as React from 'react'
 const Footer = () => {
     return(
         <footer>
-            Copyright, seriously who cares? 2023 -2024
+            <div className="text-center p-3 text-white bg-dark" >
+                © 2024 Copyright
+            </div>
         </footer>
     )
 }
